@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GameHospice.Api/GameHospice.Api.csproj" />
+    <Project Path="src/GameHospice.Web/GameHospice.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/GameHospice.Api.Tests/GameHospice.Api.Tests.csproj" />
+  </Folder>
+</Solution>
