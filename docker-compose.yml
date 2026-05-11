@@ -4,7 +4,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ${GAMES_PATH:-C:/DOS/Games}:/games:ro
+      - ${GAMES_PATH:-D:/Games/DosBox}:/games:ro
     environment:
       - GamesPath=/games
       - ASPNETCORE_URLS=http://+:8080

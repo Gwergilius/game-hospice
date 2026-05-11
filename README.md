@@ -88,14 +88,17 @@ All fields are optional. If `game.json` is absent, the folder name is used as th
 
 ### Running with Docker
 
-Edit `docker-compose.yml` to point to your games folder:
+Set the `GAMES_PATH` environment variable to your local games folder, then start the stack:
 
-```yaml
-volumes:
-  - C:/DOS/Games:/games:ro
+```bash
+GAMES_PATH=D:/Games/DosBox docker compose up --build
 ```
 
-Then start the stack:
+Alternatively, set it in a `.env` file next to `docker-compose.yml`:
+
+```env
+GAMES_PATH=D:/Games/DosBox
+```
 
 ```bash
 docker compose up --build
